@@ -107,7 +107,7 @@ pop [register]
 
 ### Jumps
 
-With the command **cmp ** we can compare two register. 
+With the command **cmp** we can compare two register. 
 
 ```
 cmp r0, r1
