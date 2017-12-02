@@ -105,4 +105,34 @@ pop [register]
 
 ```
 
+### Jumps
+
+With the command **cmp ** we can compare two register. 
+
+```
+cmp r0, r1
+je l1
+jmp l2
+
+```
+
+Are the two register equal? The the command **je** is actively and jumps to label **l1**
+Otherwise the command **jmp** is actively and jumps to label **l2**
+
+#### Labels
+
+For instance
+
+```
+l1: 
+
+```
+
+is a label.
+Labels begin with a **l** and contains numbers.
+For instance l1, l2 etc ...
+
+To set a label you must end with a colon.
+If you use a label in the jump commands, then avoid the colon at the end.
+
 
