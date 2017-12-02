@@ -70,6 +70,11 @@ int 0x80
 **Important: The arithmetic commands (add, sub) works only with registers or constans. 
 Therefore we must use the register ebx as a placeholder, above.**
 
+Result of code, above.
+
+```
+46
+```
 
 
 
