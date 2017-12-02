@@ -80,4 +80,29 @@ Result of code, above.
 Comments begin with ; and ends with a newline. 
 We noticed a comment, above. 
 
+### Push and Pop
+
+Sometimes we must save the content of a register, against losing of data.
+Therefor we use the push and pop command.
+
+```
+push eax
+
+```
+
+This line will push the content of register eax onto the stack. 
+
+```
+pop ecx 
+
+```
+
+This line will pop the content of the top of the stack onto the ecx register. 
+
+```
+push [register]
+pop [register]
+
+```
+
 
