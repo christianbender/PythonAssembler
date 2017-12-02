@@ -75,6 +75,9 @@ Result of code, above.
 ```
 46
 ```
+### Comments
 
+Comments begin with ; and ends with a newline. 
+We noticed a comment, above. 
 
 
