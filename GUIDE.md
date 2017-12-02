@@ -136,3 +136,46 @@ To set a label you must end with a colon.
 If you use a label in the jump commands, then avoid the colon at the end.
 
 
+### Subprograms
+
+```
+mov ecx, 5
+
+call _double
+call _cube
+call _inc
+
+mov eax, 4
+int 0x80
+mov eax, 1
+mov ebx, 0
+int 0x80
+
+
+
+_double:
+add ecx, ecx
+ret 
+
+_cube:
+push eax
+mov eax, ecx
+add ecx, eax
+add ecx, eax
+pop eax
+ret
+
+_inc:
+add ecx, 1
+ret
+
+```
+
+A subprogram label begins with a **_** and ends with a colon. See above. 
+If you call the subprogram you must avoid the colon.
+
+``` call _subprogramName
+```
+
+**Important:** Each subprogram must end with the **ret** command.
+
